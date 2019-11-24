@@ -20,10 +20,19 @@ table{
         <table id="tblOne" >
             <tr>
                 <td>FirstName : {{ page.FirstName }}</td>
-                <td>
+                <td rowspan="3">
                     <img src="/images/{{ page.img }}" >
                 </td>
             </tr>
+	    <tr>
+		    <td>LastName: {{ page.LastName. }}</td>		
+	    </tr>
+	    <tr>
+		    <td colspan"3"> 
+			    <script> jQuery(document).ready(function(){ callQR(); }); function callQR(){ var url=document.URL; url=encodeURI(url); var fullUrl="https://chart.googleapis.com/chart?chs=150x150&cht=qr&choe=UTF-8&chl="+url; jQuery("#QR").attr("src",fullUrl); }
+	</script>
+		    </td>
+		</tr>
         </table>
         
         </div>
