@@ -1,2 +1,4 @@
 name: QR code
 markdown: kramdown
+
+theme: jekyll-theme-cayman
