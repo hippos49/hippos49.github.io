@@ -41,3 +41,12 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+td{
+    border:black thin solid;
+    max-width:50%;
+    width:50%;
+}
+table{
+    width:100%;
+}
