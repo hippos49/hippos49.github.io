@@ -2,6 +2,8 @@
     <head>
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script> jQuery(document).ready(function(){ callQR(); }); function callQR(){ var url=document.URL; url=encodeURI(url); var fullUrl="https://chart.googleapis.com/chart?chs=150x150&cht=qr&choe=UTF-8&chl="+url; jQuery("#QR").attr("src",fullUrl); }
+	</script>
         <style>
         td{
     border:black thin solid;
@@ -13,7 +15,7 @@ table{
 }
 </style>
 	    <title>
-		    V2 {{ page.title }}
+		    V3 {{ page.title }}
 	    </title>
     </head>	
     <div>
@@ -29,8 +31,7 @@ table{
 	    </tr>
 	    <tr>
 		    <td colspan"3"> 
-			    <script> jQuery(document).ready(function(){ callQR(); }); function callQR(){ var url=document.URL; url=encodeURI(url); var fullUrl="https://chart.googleapis.com/chart?chs=150x150&cht=qr&choe=UTF-8&chl="+url; jQuery("#QR").attr("src",fullUrl); }
-	</script>
+			    <img id="QR" src="#" />
 		    </td>
 		</tr>
         </table>
