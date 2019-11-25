@@ -1,2 +1,2 @@
 # hippos49.github.io
-QR code lost in found
+QR code lost and found
